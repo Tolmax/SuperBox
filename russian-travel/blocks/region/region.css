@@ -1,0 +1,32 @@
+.region {
+    max-width: 984px;
+    margin: auto;
+  }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .region {
+    max-width: 928px;
+    margin: auto;
+  }
+}
+   
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .region {
+    max-width: 720px;
+    margin: auto;
+  }
+}
+   
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .region {
+    max-width: 425px;
+    margin: auto;
+  }
+}
+    
+@media screen and (max-width: 424px) {
+  .region {
+    max-width: 320px;
+    margin: auto;
+  }
+}

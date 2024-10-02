@@ -1,0 +1,18 @@
+.infor__list {
+    max-width: 690px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {}
+   
+    @media screen and (min-width: 768px) and (max-width: 1023px) {}
+       
+    @media screen and (min-width: 425px) and (max-width: 768px) {}
+        
+    @media screen and (max-width: 425px) {
+      .infor__list {
+        max-width: 288px;
+        }
+    }

@@ -1,0 +1,26 @@
+.infor__digit {
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+   
+  }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {}
+   
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+   
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .infor__digit {
+    font-size: 8px;
+  }
+}
+    
+@media screen and (max-width: 424px) {
+  .infor__digit {
+    font-size: 10px;
+    }
+}

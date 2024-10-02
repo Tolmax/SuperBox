@@ -1,0 +1,14 @@
+.region__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+  }
+  .region__link:hover {
+    opacity: 0.8;
+  }

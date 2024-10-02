@@ -1,0 +1,27 @@
+.infor__list-text {
+    max-width: 690px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+  }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {}
+   
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+   
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .infor__list-text {
+    max-width: 382.5px;
+    }
+}
+    
+@media screen and (max-width: 424px) {
+  .infor__list-text {
+    max-width: 288px;
+    }
+}
