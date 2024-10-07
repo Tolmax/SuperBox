@@ -1,5 +1,7 @@
 .header__logo {
-    max-width: 176px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     
   }
 

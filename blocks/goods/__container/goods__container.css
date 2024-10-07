@@ -1,0 +1,8 @@
+.goods__container {
+    max-width: 100hw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
