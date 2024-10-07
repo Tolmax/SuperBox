@@ -3,7 +3,9 @@ import {boxesImages} from "./cards.js"
 
 const elementTemplate = document.querySelector('#card-template').content;
 const newButton = document.querySelector('.goods__title');
+const newButton2 = document.querySelector('.goods__title2');
 const elementPlace = document.querySelector('.goods__box');
+const elementPlace2 = document.querySelector('.goods__box2');
 
 
 function createCard(link, name) {
@@ -44,11 +46,37 @@ export function getgoodsCards() {
         }
     })
 }
-
 function getback() {
     document.querySelector('.goods__title').textContent = 'Вернуться назад';
     document.querySelector('.goods__title').style.fontSize = '18px';
 }
+
+export function getgoodsCards2() {
+    elementPlace2.innerHTML = '';
+    newButton2.style.cursor = 'pointer'
+    elementPlace2.style.flexWrap = 'wrap';
+    boxesImages.forEach(function({ link, name }) {
+        const cardNew = createCard(link, name);
+        elementPlace2.append(cardNew);
+    });
+    getback2();
+    document.addEventListener("keydown", (evt) => {
+        if (evt.key === "Escape") {
+            location.reload();
+        }
+      });
+    newButton2.addEventListener('click', (evt) => {
+        if (evt) {
+            location.reload();
+        }
+    })
+}
+
+function getback2() {
+    document.querySelector('.goods__title2').textContent = 'Вернуться назад';
+    document.querySelector('.goods__title2').style.fontSize = '18px';
+}
+
 
 // document.onkeydown = function(event) {
 //     if (event.keyCode === 27) { // Esc

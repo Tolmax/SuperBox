@@ -1,8 +1,11 @@
 @import url(../goods/__container/goods__container.css);
 @import url(../goods/__image/goods__image.css);
+@import url(../goods/__image-shelfs/goods__image-shelfs.css);
 @import url(../goods/__paragraph/goods__paragraph.css);
 @import url(../goods/__title/goods__title.css);
+@import url(../goods/__title2/goods__title2.css);
 @import url(../goods/__box/goods__box.css);
+@import url(../goods/__box2/goods__box2.css);
 
 
 .goods {
