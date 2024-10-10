@@ -26,6 +26,8 @@
         размерам</p>
     </section>
 
+
+
     <section id="slider-container">
       <div id="top">
         <img src="<%=require('./images/211689_left_arrow_icon.png')%>" alt="" class="arrow arrow-left">
@@ -130,10 +132,33 @@
 
   <!-- <div class="popup">
     <div class="popup__content">
-
+      <p class="popup__title">PHILOSOFY</p>
     </div>
     <button type="button" class="popup__close"></button>
   </div> -->
+
+  <div class="popup">
+		<div class="popup__container">
+			<button class="popup__close" aria-label="закрыть"></button>
+			<div class="popup__content">
+				<form class="form">
+					<div class="order">
+						<label class="order__field">
+							<span class="form__label popup__title">Email</span>
+							<input class="form__input" type="text" placeholder="Введите Email" />
+						</label>
+						<label class="order__field">
+							<span class="form__label popup__title">Телефон</span>
+							<input class="form__input" type="text" placeholder="+7 (" />
+						</label>
+					</div>
+					<div class="popup__actions">
+						<button disabled class="button">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
 
   <!-- <script type="module" src="./scripts/index.js"></script> -->

@@ -1,4 +1,4 @@
-import {getgoodsCards} from "./goodsOne.js"
+// import {getgoodsCards} from "./goodsOne.js"
 
 const popupOpen = document.querySelector(".popup");
 const popupContent = popupOpen.querySelector(".popup__content");
@@ -6,15 +6,15 @@ const popupClose = popupOpen.querySelector(".popup__close");
 const stopScrolling = document.querySelector(".body");
 
 function openPopup(popup) {
-  popup.classList.add("popup_is-opened");
+  popup.classList.add("popup__is-active");
   document.addEventListener("keydown", (evt) => {
     if (evt.key === "Escape") {
       closePopup(popup);
     }
   });
-  // popupClose.addEventListener("click", function () {
-  //   closePopup(popup);
-  // });
+  popupClose.addEventListener("click", function () {
+    closePopup(popup);
+  });
   window.addEventListener("click", function (e) {
     if (e.target === popup) {
       closePopup(popup);
@@ -23,29 +23,27 @@ function openPopup(popup) {
 }
 
 function closePopup(popup) {
-  popup.classList.remove("popup_is-opened");
+  popup.classList.remove("popup__is-active");
   stopScrolling.classList.remove("stop-scrolling");
 }
 
 
 function generatePopup() {
-  getgoodsCards();
+  // getgoodsCards();
   stopScrolling.classList.add("stop-scrolling");
   openPopup(popupOpen);
 }
+
+
+
+
+
 
 // function closeEsc(evt) {
 //   if (evt.key === "Escape") {
 //     closePopup(popupOpen);
 //   }
 // }
-
-
-
-
-
-
-
 
 // function generatePopup(data) {
 //   popupImage.src = data.posterUrlPreview;

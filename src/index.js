@@ -2,13 +2,14 @@ import "./pages/index.css";
 
 import {getgoodsCards, getgoodsCards2} from "./scripts/goods.js";
 // import {getgoodsCards} from "./goodsOne.js"
-// import {generatePopup} from "./modals.js"
+import {generatePopup} from "./scripts/modals.js";
 import {arrowLeft, arrowRight, nextSlide, previousSlide, addPagination} from "./scripts/slider.js";
 import {getgoodsScroll1, getgoodsScroll2, getgoodsScroll3, getgoodsScroll4} from "./scripts/scroll.js";
 
 
 const tipeOfBoxes = document.querySelector(".goods__image");
 const tipeOfBoxes2 = document.querySelector(".goods__image-two");
+const individualOrder = document.querySelector('.header__button');
 
 const scrollSlider1 = document.querySelector('.one');
 const scrollSlider2 = document.querySelector('.two');
@@ -20,7 +21,7 @@ tipeOfBoxes.addEventListener('click', getgoodsCards);
     // Для вставки карточек в разметку
 tipeOfBoxes2.addEventListener('click', getgoodsCards2);
     // Для открытия модального окна
-// tipeOfBoxes.addEventListener('click', generatePopup)
+individualOrder.addEventListener('click', generatePopup)
 
 
 scrollSlider1.addEventListener('click', getgoodsScroll1);
