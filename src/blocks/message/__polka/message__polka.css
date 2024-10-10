@@ -1,0 +1,28 @@
+.message__polka {
+    max-width: 984px;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .message__polka {
+      max-width: 928px;
+    }
+  }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      .message__polka {
+        max-width: 100%;
+      }
+          }  
+    @media screen and (min-width: 425px) and (max-width: 767px) {
+      .message__polka {
+        max-width: 425px;
+        min-height: 266px;
+      }
+    }
+    @media screen and (max-width: 424px) {
+      .message__polka {
+        max-width: 320px;
+        min-height: 200px;
+      }
+    }
