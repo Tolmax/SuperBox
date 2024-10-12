@@ -1,7 +1,4 @@
-// import {getgoodsCards} from "./goodsOne.js"
-
 const popupOpen = document.querySelector(".popup");
-const popupContent = popupOpen.querySelector(".popup__content");
 const popupClose = popupOpen.querySelector(".popup__close");
 const stopScrolling = document.querySelector(".body");
 
@@ -29,7 +26,6 @@ function closePopup(popup) {
 
 
 function generatePopup() {
-  // getgoodsCards();
   stopScrolling.classList.add("stop-scrolling");
   openPopup(popupOpen);
 }

@@ -3,4 +3,4 @@
 
 ###Проект **ЯЩИКИ И ЯЩИЧКИ** это мой *PET-project* - сайт мебельной мастерской.### 
 
-##Ссылка на проект https://tolmax.github.io/russian-travel/ ##
+##Ссылка на проект https://tolmax.github.io/SuperBox/ ##
