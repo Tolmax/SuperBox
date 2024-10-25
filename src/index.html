@@ -7,6 +7,9 @@
   <meta name='description' content='Сайт производителя индивидуальной мебели'>
   <meta name='keywords' content='html, css'>
   <meta name="author" content="Анатолий">
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script,js"></script> -->
   <!-- <link rel="stylesheet" href="./pages/index.css"> -->
   <title>ЯЩИЧКИ & ЯЩИКИ</title>
 </head>
@@ -16,6 +19,7 @@
   <header class="header">
     <img src="<%=require('./images/logo-nuts.jpg')%>" alt="логотип" class="header__logo">
     <button type="button" class="header__button">ЗАКАЗАТЬ ПО ВАШИМ РАЗМЕРАМ ЛЮБОЙ ТОВАР</button>
+    <a aria-label="Chat on WhatsApp" class="header__whatsapp" href="https://wa.me/79852100437"></a>
   </header>
 
   <main class="page">
@@ -25,8 +29,6 @@
       <p class="message__subtitle">Производство деревянных ящиков для хранения вещей и продуктов по Вашим индивидуальным
         размерам</p>
     </section>
-
-
 
     <section id="slider-container">
       <div id="top">
@@ -72,7 +74,7 @@
 			<button class="popup__close" aria-label="закрыть"></button>
 			<div class="popup__content">
 				<form class="form">
-					<div class="order">
+					<div class="popup__order">
 						<label class="order__field">
 							<span class="form__label popup__title">Email</span>
 							<input class="form__input" type="text" placeholder="Введите Email" />
@@ -118,3 +120,31 @@
 </body>
 
 </html>
+
+
+<!-- <section class="testslider">
+  <div class="testslider__unit">
+    <div class="testslider__image">
+      <img src="<%=require('./images/superbox.png')%>" class="testslider__slider" alt="photo box">
+    </div>
+  </div>
+  <div class="testslider__unit">
+    <div class="testslider__image">
+      <img src="<%=require('./images/tumbs.jpg')%>" class="testslider__slider" alt="photo box">
+    </div>
+  </div>
+  <div class="testslider__unit">
+    <div class="testslider__image">
+      <img src="<%=require('./images/shellboxes.jpg')%>" class="testslider__slider" alt="photo box">
+    </div>
+    <div class="testslider__unit">
+      <div class="testslider__image">
+        <img src="<%=require('./images/shells.jpg')%>" class="testslider__slider" alt="photo box">
+      </div>
+    </div>
+    <div class="testslider__unit">
+      <div class="testslider__image">
+        <img src="<%=require('./images/boxes.jpg')%>" class="testslider__slider" alt="photo box">
+      </div>
+    </div>
+</section> -->

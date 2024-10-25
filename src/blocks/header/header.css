@@ -1,5 +1,6 @@
 @import url(./__button/header__button.css);
 @import url(./__logo/header__logo.css);
+@import url(./__whatsapp/header__whatsapp.css);
 
 .header {
     max-width: 1184px;

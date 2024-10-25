@@ -30,6 +30,15 @@ addPagination();
 
 
 
+
+
+
+
+
+
+
+
+
 // const element = document.getElementById('.goods__image');
 
 // element.addEventListener('click', function () {
