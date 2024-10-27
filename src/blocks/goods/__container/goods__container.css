@@ -4,5 +4,19 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin: 25px auto;
   }
+/* 
+	.goods__container {
+    max-width: 100hw;
+    display: grid;
+		grid-template-columns: 460px auto;
+		grid-template-rows: 180px 320px;
+		gap: 13px;
+
+
+    /* flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+    /* margin: auto;
+  } */

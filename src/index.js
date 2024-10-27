@@ -15,10 +15,10 @@ window.onbeforeunload = function () {
 getTypeOfGoods();
 
 
-const individualOrder = document.querySelector('.header__button');
+// const individualOrder = document.querySelector('.header__button');
 
 
-individualOrder.addEventListener('click', generatePopup);
+// individualOrder.addEventListener('click', generatePopup);
 
 // arrowLeft.addEventListener("click", previousSlide);
 // arrowRight.addEventListener("click", nextSlide);

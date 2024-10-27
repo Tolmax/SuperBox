@@ -18,4 +18,9 @@ function getgoodsScroll4(evt) {
         document.querySelector('#four').scrollIntoView({ behavior: "smooth", block: "start"  });
     }
 }
-export {getgoodsScroll1, getgoodsScroll2, getgoodsScroll3, getgoodsScroll4}
+function getgoodsScroll5(evt) {
+	if (evt) {
+			document.querySelector('#five').scrollIntoView({ behavior: "smooth", block: "start"  });
+	}
+}
+export {getgoodsScroll1, getgoodsScroll2, getgoodsScroll3, getgoodsScroll4, getgoodsScroll5}

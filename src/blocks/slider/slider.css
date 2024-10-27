@@ -5,7 +5,7 @@
 } */
 
 #slider-container {
-	max-width: 100vw;
+	max-width: 80%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -21,8 +21,8 @@
 	justify-content: center;
 	flex-direction: column;
 	overflow: hidden;
-	width: 80vw;
-	height: 700px;
+	width: 70vw;
+	height: 500px;
 	border-radius: 20px;
 }
 
@@ -34,7 +34,7 @@
 
 #slider {
 	max-width: 100%;
-	max-height: 80%;
+	max-height: 100%;
 	display: flex;
 	transition: 1s ease-in-out;
 }
@@ -47,8 +47,8 @@
 }
 
 .arrow {
-	width: 120px;
-	height: 120px;
+	width: 60px;
+	height: 60px;
 }
 
 .arrow-right {
@@ -69,4 +69,5 @@
 #bottom {
 	display: flex;
 	column-gap: 25px;
+	margin-top: 25px;
 }
