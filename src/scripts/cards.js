@@ -20,7 +20,7 @@ export const goodsTypes = [
     box: "boxes-box",
     title: "ЯЩИКИ",
     link: Type1,
-    description: "ТУТ БУДЕТ КРАТКОЕ ОПИСАНИЕ ПРО ЯЩИКИ",
+    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
   },
   {
     number: "three",
@@ -28,7 +28,7 @@ export const goodsTypes = [
     box: "lockers-box",
     title: "ПОДСТАВКИ",
     link: Type2,
-    description: "ТУТ БУДЕТ КРАТКОЕ ОПИСАНИЕ ПРО ЯЩИКИ",
+    description: "ТУТ БУДЕТ КРАТКОЕ ОПИСАНИЕ ПРО ЯЩИКИ Pellentesque dignissim faucibus maximus. Sed sapien est, tincidunt eu neque eget, iaculis aliquam quam. Vivamus pharetra fringilla sapien. Praesent sed nisi et lacus cursus aliquam. Suspendisse at urna iaculis, aliquet elit venenatis, hendrerit augue. Fusce eu eleifend enim. In hac habitasse platea dictumst. Integer pretium urna eget augue facilisis, eu congue orci ultrices. Curabitur cursus mi sed sagittis commodo. Maecenas vel purus libero.",
   },
   {
     number: "four",
@@ -36,7 +36,7 @@ export const goodsTypes = [
     box: "shelves-box",
     title: "ШКАФЫ",
     link: Type3,
-    description: "ТУТ БУДЕТ КРАТКОЕ ОПИСАНИЕ ПРО ЯЩИКИ",
+    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
   },
   {
     number: "five",
@@ -44,7 +44,7 @@ export const goodsTypes = [
     box: "tumbs-box",
     title: "ТУМБЫ",
     link: Type4,
-    description: "ТУТ БУДЕТ КРАТКОЕ ОПИСАНИЕ ПРО ЯЩИКИ",
+    description: "ТУТ БУДЕТ КРАТКОЕ ОПИСАНИЕ ПРО ЯЩИКИ On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.",
   },
 ]
 
@@ -82,14 +82,6 @@ export const boxesImages = [
       name: "Box6",
       link: Box6,
     },
-    // {
-    //   name: "Box7",
-    //   link: Box7,
-    // },
-    // {
-    //   name: "Box7",
-    //   link: Box7,
-    // },
 ]
 
 
