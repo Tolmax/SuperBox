@@ -30,7 +30,7 @@
 .popup__order{align-items:flex-start;display:flex;flex-direction:column;justify-content:space-between;margin:20px;padding:10px}
 .popup__title{color:#000;font-family:Inter;font-size:40px;font-style:normal;font-weight:400;line-height:104%;margin:10px auto;text-align:center}
 .popup__subtitle{color:#000;font-family:Inter;font-size:30px;font-style:normal;font-weight:400;line-height:104%;margin:10px auto;min-width:750px;text-align:center}
-.popup{background-color:rgba(0,0,0,.5);background-color:transparent;display:flex;justify-content:center;left:50%;margin:auto;position:fixed;top:50%;transform:translate(-50%,-50%);visibility:hidden}
+.popup{background-color:rgba(0,0,0,.5);background-color:transparent;display:flex;justify-content:center;left:50%;margin:auto;overflow:auto;position:fixed;top:50%;transform:translate(-50%,-50%);visibility:hidden}
 .goods__container{align-items:center;display:flex;flex-direction:column;justify-content:space-between;margin:25px auto;max-width:100hw}
 .goods__image{border-radius:20px;cursor:pointer;margin:0;max-height:300px;max-width:460px;min-width:250px;-o-object-fit:cover;object-fit:cover;padding:5px}.goods__image:hover{opacity:.55}
 .goods__paragraph{color:#fff;font-family:Inter;font-size:18px;font-style:normal;font-weight:400;line-height:163%;margin:0;max-height:600px;max-width:800px;padding:10px}
