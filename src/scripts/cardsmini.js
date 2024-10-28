@@ -1,0 +1,51 @@
+
+
+const Card1 = new URL('../images/souvenirs/shelves.jpg', import.meta.url);
+
+export const cardsMini = [
+    {
+        id: "1000",
+        name: "ЯЩИК ДЛЯ СУВЕНИРОВ", 
+        subtitle: "ЗАПАСЫ В ПРОК с двумя вырезами ручек",
+        addinfo: "Предназначен для хранения мелких предметов",
+        link: Card1,
+        size: "Ящик `Малый` габариты: 237x120x130 мм",
+        comfort: "Для удобства снабжён вырезами для ручек",
+        material: "Высококачественная шлифованная фанера",
+        color: "Натуральная берёза",
+        weight: "Вес товара с упаковкой 800гр",
+        fix: "Не требует сборки",
+        usage: "Готов к эксплуатации",
+        url: "https://market.yandex.ru/catalog--korziny-korobki-i-organaizery/18054980/list?hid=12807781&rs=eJwz4vnEyMnBIMGg8PROL5uTPJc0FwcHo4CCBKMCowCbFGdKalpiaU5JvKECgwaDAKMXh4lZUpJFipFZkJGhubGBobGZmbm5kYGJvoWhqbl5SqqliaFlcmKqpXFKUrKxQWqKmUWykamBmYGBvqG-IQDeFhgL&glfilter=7893318%3A54880351",
+    },
+    {
+        id: "1002",
+        name: "ЯЩИК ДЛЯ СУВЕНИРОВ", 
+        subtitle: "ЗАПАСЫ В ПРОК с двумя вырезами ручек",
+        addinfo: "Предназначен для хранения мелких предметов",
+        link: Card1,
+        size: "Ящик `Малый` габариты: 237x120x130 мм",
+        comfort: "Для удобства снабжён вырезами для ручек",
+        material: "Высококачественная шлифованная фанера",
+        color: "Натуральная берёза",
+        weight: "Вес товара с упаковкой 800гр",
+        fix: "Не требует сборки",
+        usage: "Готов к эксплуатации",
+        url: "https://market.yandex.ru/catalog--korziny-korobki-i-organaizery/18054980/list?hid=12807781&rs=eJwz4vnEyMnBIMGg8PROL5uTPJc0FwcHo4CCBKMCowCbFGdKalpiaU5JvKECgwaDAKMXh4lZUpJFipFZkJGhubGBobGZmbm5kYGJvoWhqbl5SqqliaFlcmKqpXFKUrKxQWqKmUWykamBmYGBvqG-IQDeFhgL&glfilter=7893318%3A54880351",
+    },
+    {
+        id: "1003",
+        name: "ЯЩИК ДЛЯ СУВЕНИРОВ", 
+        subtitle: "ЗАПАСЫ В ПРОК с двумя вырезами ручек",
+        addinfo: "Предназначен для хранения мелких предметов",
+        link: Card1,
+        size: "Ящик `Малый` габариты: 237x120x130 мм",
+        comfort: "Для удобства снабжён вырезами для ручек",
+        material: "Высококачественная шлифованная фанера",
+        color: "Натуральная берёза",
+        weight: "Вес товара с упаковкой 800гр",
+        fix: "Не требует сборки",
+        usage: "Готов к эксплуатации",
+        url: "https://market.yandex.ru/catalog--korziny-korobki-i-organaizery/18054980/list?hid=12807781&rs=eJwz4vnEyMnBIMGg8PROL5uTPJc0FwcHo4CCBKMCowCbFGdKalpiaU5JvKECgwaDAKMXh4lZUpJFipFZkJGhubGBobGZmbm5kYGJvoWhqbl5SqqliaFlcmKqpXFKUrKxQWqKmUWykamBmYGBvqG-IQDeFhgL&glfilter=7893318%3A54880351",
+    },
+]

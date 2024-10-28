@@ -1,0 +1,9 @@
+.popup__details {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 250;
+    font-size: 22px;
+    line-height: 104%;
+    color: black;
+    text-align: left;
+}

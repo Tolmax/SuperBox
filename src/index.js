@@ -15,6 +15,7 @@ window.onbeforeunload = function () {
 getTypeOfGoods();
 
 
+
 // const individualOrder = document.querySelector('.header__button');
 
 

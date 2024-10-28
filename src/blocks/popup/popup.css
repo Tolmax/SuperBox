@@ -1,31 +1,41 @@
+@import url(./__addinfo/popup__addinfo.css);
+@import url(./__button/popup__button.css);
 @import url(./__close/popup__close.css);
 @import url(./__container/popup__container.css);
 @import url(./__content/popup__content.css);
+@import url(./__details/popup__details.css);
+@import url(./__image/popup__image.css);
 @import url(./__is-active/popup__is-active.css);
+@import url(./__mini-container/popup__mini-container.css);
 @import url(./__order/popup__order.css);
 @import url(./__title/popup__title.css);
+@import url(./__subtitle/popup__subtitle.css);
 
 
-.popup {
+/* .popup {
     display: block;
     visibility: hidden;
-    /* background-color: darkgrey; */
-    /* background-color: white; */
+    background-color: white;
+    border-radius: 25px;
     position: fixed;
-    top: 20%;
-    right: 10%;
+    top: 25%;
+    left: 25%;
     z-index: 10;
-    overflow: hidden;
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    overflow: auto;
+   } */
 
-
-        /* visibility: hidden;
+    .popup {
+        visibility: hidden;
         position: fixed;
-        top: 50%;
         left: 50%;
+        top: 50%;
         transform: translate(-50%, -50%);
-        width: 400px;
-        height: 300px;
-        background-color: white;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-        border-radius: 8px; */
-}
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        background-color: transparent;
+    }

@@ -1,5 +1,6 @@
 import { goodsTypes, boxesImages, boxesImages2 } from "../scripts/cards.js";
 import { createCard } from "../scripts/goods.js";
+import { cardsMini } from "../scripts/cardsmini.js"
 import {getgoodsScroll1, getgoodsScroll2, getgoodsScroll3, getgoodsScroll4, getgoodsScroll5} from "../scripts/scroll.js";
 
 const elementTemplate = document.querySelector("#goods-template").content;
@@ -30,6 +31,8 @@ function createTypesOfGoods(number, _id, box, title, link, description) {
     getgoodsCard(evt);
   });
 
+
+
   return cardElement;
 }
 
@@ -50,7 +53,7 @@ function getgoodsCard(evt) {
     let elementsBox;
 
     if (evt.target === document.getElementById('souvenirbox')) {
-        cardsArray = boxesImages;
+        cardsArray = cardsMini;
         elementsBox = document.getElementById('souvenir-box');
     } else if (evt.target === document.getElementById('boxes')) {
         cardsArray = boxesImages2;
@@ -65,15 +68,23 @@ function getgoodsCard(evt) {
 			cardsArray = boxesImages2;
 			elementsBox = document.getElementById('tumbs-box');
 	} 
-    cardsArray.forEach(function ({ link, name }) {
-        const cardNew = createCard(link, name);
-        elementsBox.append(cardNew);
-      });
+    // cardsArray.forEach(function ({ link, name }) {
+    //     const cardNew = createCard(link, name);
+    //     elementsBox.append(cardNew);
+    //   });
+    cardsArray.forEach(function (data) {
+      const cardNew = createCard(data);
+      elementsBox.append(cardNew);
+    });
   document.addEventListener("keydown", (evt) => {
     if (evt.key === "Escape") {
       elementsBox.innerHTML = "";
       cardsArray = undefined;
     }
+    // const infoMiniCard = elementsBox.querySelector('.elements__image')
+    // infoMiniCard.addEventListener('click', () => {
+    //   generatePopupCard();
+    // })
   });
 //   newButton.addEventListener('click', (evt) => {
 //       if (evt) {

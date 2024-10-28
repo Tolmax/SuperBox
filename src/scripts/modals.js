@@ -4,6 +4,7 @@ const stopScrolling = document.querySelector(".body");
 
 function openPopup(popup) {
   popup.classList.add("popup__is-active");
+  console.log(popup);
   document.addEventListener("keydown", (evt) => {
     if (evt.key === "Escape") {
       closePopup(popup);
@@ -31,7 +32,45 @@ function generatePopup() {
 }
 
 
+const popupName = document.querySelector('.popup__title');
+const popupSubtitle = document.querySelector('.popup__subtitle');
+const popupAddinfo = document.querySelector('.popup__addinfo');
+const popupImage = document.querySelector('.popup__image');
+const popupSize = document.querySelector('.popup__detail-size');
+const popupComfort = document.querySelector('.popup__detail-comfort');
+const popupMaterial = document.querySelector('.popup__detail-material');
+const popupColor = document.querySelector('.popup__detail-color');
+const popupWeight = document.querySelector('.popup__detail-weight');
+const popupFix = document.querySelector('.popup__detail-fix');
+const popupUsage = document.querySelector('.popup__detail-usage');
+const popupUrl = document.querySelector('.popup__url');
+const popupButton = document.querySelector('.popup__button');
 
+
+
+
+export function generatePopupCard(data) {
+
+  popupName.textContent = data.name;
+  popupSubtitle.textContent = data.subtitle;
+  popupAddinfo.textContent = data.addinfo;
+  popupImage.src = data.link;
+  popupImage.alt = data.name;
+  popupSize.textContent = data.size;
+  popupComfort.textContent = data.comfort;
+  popupMaterial.textContent = data.material;
+  popupColor.popupColor = data.color;
+  // popupColor.textContent = `Цвет: ${data.colors.map((color) => `${color.color}`)}`;
+  popupWeight.textContent = data.weight;
+  popupFix.textContent = data.fix;
+  popupUsage.textContent = data.usage;
+  popupUrl.href = `${data.url}`;
+
+  stopScrolling.classList.add("stop-scrolling");
+
+  popupButton.addEventListener('click', console.log('Press the button'));
+  openPopup(popupOpen);  
+}
 
 
 
@@ -40,23 +79,6 @@ function generatePopup() {
 //     closePopup(popupOpen);
 //   }
 // }
-
-// function generatePopup(data) {
-//   popupImage.src = data.posterUrlPreview;
-//   popupImage.alt = data.nameRu;
-//   popupTitle.textContent = `"${data.nameRu}"    `;
-//   popupYear.textContent = data.year;
-//   popupGaner.textContent = `Жанр: ${data.genres.map(
-//     (genre) => ` ${genre.genre}`
-//   )}`;
-//   popupRuntime.textContent = `Продолжительность: ${data.filmLength} минут`;
-//   popupUrl.href = `${data.webUrl}`;
-//   popupUrl.textContent = `${data.webUrl}`;
-//   popupDescrip.textContent = `Описание: ${data.description}`;
-//   stopScrolling.classList.add("stop-scrolling");
-//   openPopup(popupOpen);
-// }
-
 // popupClose.addEventListener("click", function () {
 //   closePopup(popupOpen);
 // });

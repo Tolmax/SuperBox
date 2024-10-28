@@ -7,5 +7,5 @@
     pointer-events: all;
     transition: visibility 0s, opacity 0.6s; */
     visibility: visible!important; 
-    /* display: flex; */
+    display: flex;
 }

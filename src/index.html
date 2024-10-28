@@ -15,14 +15,21 @@
 	<header class="header">
 		<img src="<%=require('./images/logo-nuts.jpg')%>" alt="логотип" class="header__logo">
 		<!-- <button type="button" class="header__button">ЗАКАЗАТЬ ПО ВАШИМ РАЗМЕРАМ ЛЮБОЙ ТОВАР</button> -->
-		<a aria-label="Chat on WhatsApp" class="header__whatsapp" href="https://wa.me/79852100437"></a>
+		<!-- <div class="header__messegers"> -->
+			<a class="header__telegramm" href="https://t.me/Mirimar70" target="_blank"
+				aria-label="Написать в Telegram"></a>
+			<a class="header__whatsapp"
+				href="https://wa.me/+79852100437?text=Здравствуйте,%20интересует%20ваше%20объявление%20о%20продаже%20машины"
+				target="_blank" aria-label="Написать в WhatsApp"></a>
+		<!-- </div> -->
 	</header>
 
 	<main class="page">
 
 		<section class="message">
 			<h1 class="message__title">ЯЩИЧКИ & ЯЩИКИ</h1>
-			<p class="message__subtitle">Производство деревянных ящиков для хранения вещей и продуктов по Вашим индивидуальным
+			<p class="message__subtitle">Производство деревянных ящиков для хранения вещей и продуктов по Вашим
+				индивидуальным
 				размерам</p>
 		</section>
 
@@ -50,45 +57,40 @@
 	<footer class="footer">
 		<nav>
 			<ul class="footer__links">
-				<li><a href="https://travel.yandex.ru" class="footer__link" target="_blank">телефон +7-903-343-31-13</a></li>
-				<li><a href="https://travel.yandex.ru" class="footer__link" target="_blank">e-mail kra1970@mail.ru</a></li>
+				<li><a href="https://travel.yandex.ru" class="footer__link" target="_blank">телефон +7-903-343-31-13</a>
+				</li>
+				<li><a href="https://travel.yandex.ru" class="footer__link" target="_blank">e-mail kra1970@mail.ru</a>
+				</li>
 			</ul>
 		</nav>
 
 		<p class="footer__copyright">AM studio</p>
 
 	</footer>
-
-	<!-- <div class="popup">
-    <div class="popup__content">
-      <p class="popup__title">PHILOSOFY</p>
-    </div>
-    <button type="button" class="popup__close"></button>
-  </div> -->
-
 	<div class="popup">
 		<div class="popup__container">
 			<button class="popup__close" aria-label="закрыть"></button>
 			<div class="popup__content">
-				<form class="form">
-					<div class="popup__order">
-						<label class="order__field">
-							<span class="form__label popup__title">Email</span>
-							<input class="form__input" type="text" placeholder="Введите Email" />
-						</label>
-						<label class="order__field">
-							<span class="form__label popup__title">Телефон</span>
-							<input class="form__input" type="text" placeholder="+7 (" />
-						</label>
-					</div>
-					<div class="popup__actions">
-						<button disabled class="button">Отправить</button>
-					</div>
-				</form>
+				<h3 class="popup__title">ЯЩИК ДЛЯ СУВЕНИРОВ</h3>
+				<h4 class="popup__subtitle">"ЗАПАСЫ ВПРОК" с двумя вырезами для ручек</h4>
+				<span class="popup__addinfo">Предназначен для хранения мелких предметов</span>
+				<img class="popup__image" src="" alt="" />
+				<h5 class="popup__details-title">Основные характеристики</h5>
+				<div class="popup__mini-container">
+					<ul class="popup__details-list">
+						<li class="popup__detail-size popup__details">Габариты</li>
+						<li class="popup__detail-comfort popup__details">Удобства</li>
+						<li class="popup__detail-material popup__details">Материал</li>
+						<li class="popup__detail-color popup__details">Цвет</li>
+						<li class="popup__detail-weight popup__details">Вес товара</li>
+						<li class="popup__detail-fix popup__details">Сборка</li>
+						<li class="popup__detail-usage popup__details">Готовность</li>
+					</ul>
+					<button class="popup__button"><a href="" target="_blank" class="popup__url">КУПИТЬ</a></button>
+				</div>
 			</div>
 		</div>
 	</div>
-
 
 	<!-- <script type="module" src="./scripts/index.js"></script> -->
 
@@ -115,3 +117,34 @@
 </body>
 
 </html>
+
+
+<!-- <div class="popup">
+    <div class="popup__content">
+      <p class="popup__title">PHILOSOFY</p>
+    </div>
+    <button type="button" class="popup__close"></button>
+  </div> -->
+
+<!-- <div class="popup">
+		<div class="popup__container">
+			<button class="popup__close" aria-label="закрыть"></button>
+			<div class="popup__content">
+				<form class="form">
+					<div class="popup__order">
+						<label class="order__field">
+							<span class="form__label popup__title">Email</span>
+							<input class="form__input" type="text" placeholder="Введите Email" />
+						</label>
+						<label class="order__field">
+							<span class="form__label popup__title">Телефон</span>
+							<input class="form__input" type="text" placeholder="+7 (" />
+						</label>
+					</div>
+					<div class="popup__actions">
+						<button disabled class="button">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div> -->
