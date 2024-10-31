@@ -1,11 +1,11 @@
 .message__subtitle {
   max-width: 80%;
-  font-family: 'Inter';
+  font-family: 'Merriweather-Bold', 'Inter';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 30px;
   line-height: 120%;
-  color: #FFFFFF;
+  color: black;
   text-align: center;
   margin: 32px auto 64px;
 }

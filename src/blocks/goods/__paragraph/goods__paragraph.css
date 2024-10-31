@@ -1,14 +1,12 @@
 .goods__paragraph {
-    font-family: 'Inter';
+    font-family: 'Merriweather-Regular', 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 163%;
-    color: #FFFFFF;
+    color: black;
     margin: 0;
     padding: 10px;
-    /* min-width: 600px; */
 		max-width: 800px;
-		/* max-width: calc(100%-500px); */
 		max-height: 600px;
   }

@@ -7,20 +7,19 @@
 	<meta name='description' content='Сайт производителя индивидуальной мебели'>
 	<meta name='keywords' content='html, css'>
 	<meta name="author" content="Анатолий">
-	<title>ЯЩИЧКИ & ЯЩИКИ</title>
+	<title>ЯЩИКИ & ЯЩИЧКИ</title>
 </head>
 
 <body class="body">
 
 	<header class="header">
-		<img src="<%=require('./images/logo-nuts.jpg')%>" alt="логотип" class="header__logo">
+		<!-- <img src="<%=require('./images/logo-nuts.jpg')%>" alt="логотип" class="header__logo"> -->
 		<!-- <button type="button" class="header__button">ЗАКАЗАТЬ ПО ВАШИМ РАЗМЕРАМ ЛЮБОЙ ТОВАР</button> -->
 		<!-- <div class="header__messegers"> -->
-			<a class="header__telegramm" href="https://t.me/Mirimar70" target="_blank"
-				aria-label="Написать в Telegram"></a>
-			<a class="header__whatsapp"
-				href="https://wa.me/+79852100437?text=Здравствуйте,%20интересует%20ваше%20объявление%20о%20продаже%20машины"
-				target="_blank" aria-label="Написать в WhatsApp"></a>
+		<a class="header__telegramm" href="https://t.me/Mirimar70" target="_blank" aria-label="Написать в Telegram"></a>
+		<a class="header__whatsapp"
+			href="https://wa.me/+79852100437?text=Здравствуйте,%20интересует%20ваше%20объявление%20о%20продаже%20машины"
+			target="_blank" aria-label="Написать в WhatsApp"></a>
 		<!-- </div> -->
 	</header>
 
@@ -71,12 +70,14 @@
 		<div class="popup__container">
 			<button class="popup__close" aria-label="закрыть"></button>
 			<div class="popup__content">
-				<h3 class="popup__title">ЯЩИК ДЛЯ СУВЕНИРОВ</h3>
-				<h4 class="popup__subtitle">"ЗАПАСЫ ВПРОК" с двумя вырезами для ручек</h4>
-				<span class="popup__addinfo">Предназначен для хранения мелких предметов</span>
-				<img class="popup__image" src="" alt="" />
-				<h5 class="popup__details-title">Основные характеристики</h5>
+				<div class="popup__image-container">
+					<h3 class="popup__title">ЯЩИК ДЛЯ СУВЕНИРОВ</h3>
+					<h4 class="popup__subtitle">"ЗАПАСЫ ВПРОК" с двумя вырезами для ручек</h4>
+					<span class="popup__addinfo">Предназначен для хранения мелких предметов</span>
+					<img class="popup__image" src="" alt="" />
+				</div>
 				<div class="popup__mini-container">
+					<h5 class="popup__details-title">Основные характеристики</h5>
 					<ul class="popup__details-list">
 						<li class="popup__detail-size popup__details">Габариты</li>
 						<li class="popup__detail-comfort popup__details">Удобства</li>

@@ -1,6 +1,7 @@
 const popupOpen = document.querySelector(".popup");
 const popupClose = popupOpen.querySelector(".popup__close");
 const stopScrolling = document.querySelector(".body");
+// const popupButton = popupOpen.querySelector('.popup__button');
 
 function openPopup(popup) {
   popup.classList.add("popup__is-active");
@@ -68,7 +69,7 @@ export function generatePopupCard(data) {
 
   stopScrolling.classList.add("stop-scrolling");
 
-  popupButton.addEventListener('click', console.log('Press the button'));
+  popupButton.addEventListener('click', closePopup(popupOpen));
   openPopup(popupOpen);  
 }
 

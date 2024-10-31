@@ -4,13 +4,15 @@
 @import url(./__container/popup__container.css);
 @import url(./__content/popup__content.css);
 @import url(./__details/popup__details.css);
+@import url(./__details-title/popup__details-title.css);
 @import url(./__image/popup__image.css);
+@import url(./__image-container/popup__image-container.css);
 @import url(./__is-active/popup__is-active.css);
 @import url(./__mini-container/popup__mini-container.css);
 @import url(./__order/popup__order.css);
 @import url(./__title/popup__title.css);
 @import url(./__subtitle/popup__subtitle.css);
-
+@import url(./__url/popup__url.css);
 
 /* .popup {
     display: block;
@@ -38,4 +40,5 @@
         justify-content: center;
         margin: auto;
         background-color: transparent;
+        overflow: auto;
     }

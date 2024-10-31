@@ -1,9 +1,9 @@
-.popup__details {
+.popup__details-title {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 250;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 104%;
     color: black;
-    text-align: start;
+    text-align: left;
 }

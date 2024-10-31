@@ -5,7 +5,7 @@
 
 .message {
     max-width: 80vw;
-    margin: auto;
+    margin: 100px auto 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

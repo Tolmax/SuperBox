@@ -81,6 +81,14 @@ function getgoodsCard(evt) {
       elementsBox.innerHTML = "";
       cardsArray = undefined;
     }
+    // window.addEventListener("click", function (e) {
+    //   if (!e.target === elementsBox) {
+    //     console.log("HAY");
+        
+    //     elementsBox.innerHTML = "";
+    //     cardsArray = undefined;
+    //   }
+    // });
     // const infoMiniCard = elementsBox.querySelector('.elements__image')
     // infoMiniCard.addEventListener('click', () => {
     //   generatePopupCard();

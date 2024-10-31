@@ -1,11 +1,11 @@
 .message__title {
   max-width: 80vw;
-  font-family: 'Inter';
+  font-family: 'Merriweather-Black', 'Inter';
   font-style: normal;
   font-weight: 900;
   font-size: 96px;
   line-height: 104%;
-  color: #FFFFFF;
+  color: black;
   text-align: center;
   margin: 0 auto;
 }
