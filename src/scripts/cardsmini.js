@@ -1,11 +1,13 @@
 
 
-const Card1 = new URL('../images/souvenirs/shelves.jpg', import.meta.url);
+const Card1 = new URL('../images/souvenirs/rack1.jpg', import.meta.url);
+const Card2 = new URL('../images/souvenirs/rack2.jpg', import.meta.url);
+const Card3 = new URL('../images/souvenirs/rack3.jpg', import.meta.url);
 
 export const cardsMini = [
     {
         id: "1000",
-        name: "ЯЩИК ДЛЯ СУВЕНИРОВ", 
+        name: "СТЕЛЛАЖ", 
         subtitle: "ЗАПАСЫ В ПРОК с двумя вырезами ручек",
         addinfo: "Предназначен для хранения мелких предметов",
         link: Card1,
@@ -20,10 +22,10 @@ export const cardsMini = [
     },
     {
         id: "1002",
-        name: "ЯЩИК ДЛЯ СУВЕНИРОВ", 
+        name: "СТЕЛЛАЖ", 
         subtitle: "ЗАПАСЫ В ПРОК с двумя вырезами ручек",
         addinfo: "Предназначен для хранения мелких предметов",
-        link: Card1,
+        link: Card2,
         size: "Ящик `Малый` габариты: 237x120x130 мм",
         comfort: "Для удобства снабжён вырезами для ручек",
         material: "Высококачественная шлифованная фанера",
@@ -35,10 +37,10 @@ export const cardsMini = [
     },
     {
         id: "1003",
-        name: "ЯЩИК ДЛЯ СУВЕНИРОВ", 
+        name: "СТЕЛЛАЖ", 
         subtitle: "ЗАПАСЫ В ПРОК с двумя вырезами ручек",
         addinfo: "Предназначен для хранения мелких предметов",
-        link: Card1,
+        link: Card3,
         size: "Ящик `Малый` габариты: 237x120x130 мм",
         comfort: "Для удобства снабжён вырезами для ручек",
         material: "Высококачественная шлифованная фанера",
