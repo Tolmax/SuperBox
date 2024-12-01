@@ -50,12 +50,12 @@ export const goodsTypes = [
 ]
 
 
-const Box1 = new URL('../images/boxes/Box1.jpg', import.meta.url)
-const Box2 = new URL('../images/boxes/Box2.jpg', import.meta.url)
-const Box3 = new URL('../images/boxes/Box3.jpg', import.meta.url)
-const Box4 = new URL('../images/boxes/Box4.jpg', import.meta.url)
-const Box5 = new URL('../images/boxes/Box5.jpg', import.meta.url)
-const Box6 = new URL('../images/boxes/Box6.jpg', import.meta.url)
+const Box1 = new URL('../images/boxes/box1.jpg', import.meta.url)
+const Box2 = new URL('../images/boxes/box2.jpg', import.meta.url)
+const Box3 = new URL('../images/boxes/box3.jpg', import.meta.url)
+const Box4 = new URL('../images/boxes/box4.jpg', import.meta.url)
+const Box5 = new URL('../images/boxes/box5.jpg', import.meta.url)
+const Box6 = new URL('../images/boxes/box6.jpg', import.meta.url)
 // const Box7 = new URL('../images/boxes/Box7.jpg', import.meta.url)
 
 export const boxesImages = [
