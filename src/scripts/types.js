@@ -1,16 +1,9 @@
 import { goodsTypes, boxesImages, boxesImages2 } from "../scripts/cards.js";
 import { createCard } from "../scripts/goods.js";
 import { cardsMini } from "../scripts/cardsmini.js"
-import {getgoodsScroll1, getgoodsScroll2, getgoodsScroll3, getgoodsScroll4, getgoodsScroll5} from "../scripts/scroll.js";
 
 const elementTemplate = document.querySelector("#goods-template").content;
 const elementPlace = document.querySelector(".goods__types");
-
-const scrollSlider1 = document.querySelector('.one');
-const scrollSlider2 = document.querySelector('.two');
-const scrollSlider3 = document.querySelector('.three');
-const scrollSlider4 = document.querySelector('.four');
-const scrollSlider5 = document.querySelector('.five');
 
 
 function createTypesOfGoods(number, _id, box, title, link, description) {
@@ -30,9 +23,6 @@ function createTypesOfGoods(number, _id, box, title, link, description) {
   showCards.addEventListener("click", function (evt) {
     getgoodsCard(evt);
   });
-
-
-
   return cardElement;
 }
 
@@ -41,11 +31,6 @@ export function getTypeOfGoods() {
     const typeNew = createTypesOfGoods(number, _id, box, title, link, description);
     elementPlace.append(typeNew);
   });
-// scrollSlider1.addEventListener('click', getgoodsScroll1);
-// scrollSlider2.addEventListener('click', getgoodsScroll2);
-// scrollSlider3.addEventListener('click', getgoodsScroll3);
-// scrollSlider4.addEventListener('click', getgoodsScroll4);
-// scrollSlider5.addEventListener('click', getgoodsScroll5);
 }
 
 function getgoodsCard(evt) {
@@ -76,27 +61,30 @@ function getgoodsCard(evt) {
       const cardNew = createCard(data);
       elementsBox.append(cardNew);
     });
-  document.addEventListener("keydown", (evt) => {
-    if (evt.key === "Escape") {
-      elementsBox.innerHTML = "";
-      cardsArray = undefined;
-    }
-    // window.addEventListener("click", function (e) {
-    //   if (!e.target === elementsBox) {
-    //     console.log("HAY");
+
+    document.addEventListener("keydown", (evt) => {
+      if (evt.key === "Escape") {
+        elementsBox.innerHTML = "";
+        cardsArray = undefined;
+      }
+    });
+
+    window.addEventListener("click", function (e) {
+      if (!e.target === elementsBox) {
+        console.log("HAY");
         
     //     elementsBox.innerHTML = "";
     //     cardsArray = undefined;
-    //   }
-    // });
+      }
+    });
     // const infoMiniCard = elementsBox.querySelector('.elements__image')
     // infoMiniCard.addEventListener('click', () => {
     //   generatePopupCard();
     // })
-  });
-//   newButton.addEventListener('click', (evt) => {
-//       if (evt) {
-//           location.reload();
-//       }
-//   })
-}
+    // }
+    // newButton.addEventListener('click', (evt) => {
+    //     if (evt) {
+    //         location.reload();
+    //     }
+    // });
+  }
