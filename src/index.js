@@ -1,8 +1,13 @@
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import "./pages/index.css";
 
 import {getTypeOfGoods} from "./scripts/types.js";
 import {generatePopup} from "./scripts/modals.js";
-import {arrowLeft, arrowRight, nextSlide, previousSlide, addPagination} from "./scripts/slider.js";
+// import {arrowLeft, arrowRight, nextSlide, previousSlide, addPagination} from "./scripts/slider.js";
+import { renderSwiperSlider } from './scripts/swiper-slider.js';
 
 // эта функция отменяет старый скролл при оновлении сайта
 
@@ -24,7 +29,7 @@ getTypeOfGoods();
 // arrowLeft.addEventListener("click", previousSlide);
 // arrowRight.addEventListener("click", nextSlide);
 
-addPagination();
+// addPagination();
 // setInterval(showImage, 3000);
 // setInterval(changeSlides, 3000);
 // changeSlides, showImage
@@ -46,3 +51,5 @@ addPagination();
 //   const id = this.id;
 //   console.log(id);
 // });
+
+renderSwiperSlider();

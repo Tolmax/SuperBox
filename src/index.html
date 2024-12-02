@@ -32,21 +32,43 @@
 				размерам</p>
 		</section>
 
-		<section id="slider-container">
-			<div id="top">
-				<!-- <img src="<%=require('./images/arrow.png')%>" alt="" class="arrow arrow-left"> -->
-				<div id="frame">
-					<div id="slider">
-						<img src="<%=require('./images/boxes/boxes.jpg')%>" alt="" class="slider-image two">
-						<img src="<%=require('./images/tumbs/tumbs.jpg')%>" alt="" class="slider-image three">
-						<img src="<%=require('./images/lockers/lockers.jpg')%>" alt="" class="slider-image four">
-						<img src="<%=require('./images/shelves/shelves.jpg')%>" alt="" class="slider-image five">
-						<img src="<%=require('./images/souvenirs/racks.jpg')%>" alt="" class="slider-image one">
-					</div>
+
+
+		<section class="slider-swiper">
+			<!-- Slider main container -->
+			<div class="swiper swiper_our">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper swiper-wrapper_our">
+					<!-- Slides -->
+					<a class="swiper-slide" href="#one"><img class="swiper-slide__img"
+							src="<%=require('./images/boxes/boxes.jpg')%>" alt="Ящики"></a>
+					<a class="swiper-slide" href="#two"><img class="swiper-slide__img"
+							src="<%=require('./images/tumbs/tumbs.jpg')%>" alt="Подставки"></a>
+					<a class="swiper-slide" href="#three"><img class="swiper-slide__img"
+							src="<%=require('./images/lockers/lockers.jpg')%>" alt="Шкафы"></a>
+					<a class="swiper-slide" href="#four"><img class="swiper-slide__img"
+							src="<%=require('./images/shelves/shelves.jpg')%>" alt="Тумбы"></a>
+					<a class="swiper-slide" href="#five"><img class="swiper-slide__img"
+							src="<%=require('./images/souvenirs/racks.jpg')%>" alt="Стеллажи"></a>			
+					<!-- <img class="swiper-slide swiper-slide_our" src="<%=require('./images/boxes/boxes.jpg')%>" alt="">
+					<img class="swiper-slide swiper-slide_our" src="<%=require('./images/tumbs/tumbs.jpg')%>" alt="">
+					<img class="swiper-slide swiper-slide_our" src="<%=require('./images/lockers/lockers.jpg')%>"
+						alt="">
+					<img class="swiper-slide swiper-slide_our" src="<%=require('./images/shelves/shelves.jpg')%>"
+						alt="">
+					<img class="swiper-slide swiper-slide_our" src="<%=require('./images/souvenirs/racks.jpg')%>"
+						alt=""> -->
 				</div>
-				<!-- <img src="<%=require('./images/arrow.png')%>" alt="" class="arrow arrow-right"> -->
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev  swiper__arrow"></div>
+				<div class="swiper-button-next swiper__arrow"></div>
+
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
 			</div>
-			<div id="bottom"></div>
 		</section>
 
 		<section class="goods__types" aria-label="Виды продукции"></section>
@@ -56,7 +78,8 @@
 	<footer class="footer">
 		<nav>
 			<ul class="footer__links">
-				<li><a href="https://travel.yandex.ru" class="footer__link" target="_blank">телефон: +7-903-343-31-13</a>
+				<li><a href="https://travel.yandex.ru" class="footer__link" target="_blank">телефон:
+						+7-903-343-31-13</a>
 				</li>
 				<li><a href="https://travel.yandex.ru" class="footer__link" target="_blank">e-mail: kra1970@mail.ru</a>
 				</li>
@@ -149,3 +172,20 @@
 			</div>
 		</div>
 	</div> -->
+
+			<!-- <section id="slider-container">
+			<div id="top">
+				<img src="<%=require('./images/arrow.png')%>" alt="" class="arrow arrow-left">
+				<div id="frame">
+					<div id="slider">
+						<img src="<%=require('./images/boxes/boxes.jpg')%>" alt="" class="slider-image two">
+						<img src="<%=require('./images/tumbs/tumbs.jpg')%>" alt="" class="slider-image three">
+						<img src="<%=require('./images/lockers/lockers.jpg')%>" alt="" class="slider-image four">
+						<img src="<%=require('./images/shelves/shelves.jpg')%>" alt="" class="slider-image five">
+						<img src="<%=require('./images/souvenirs/racks.jpg')%>" alt="" class="slider-image one">
+					</div>
+				</div>
+				<img src="<%=require('./images/arrow.png')%>" alt="" class="arrow arrow-right">
+			</div>
+			<div id="bottom"></div>
+		</section> -->

@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-} */
+}
 
 #slider-container {
 	max-width: 80vw;
@@ -10,8 +10,6 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	/* row-gap: 30px; */
-	/* height: 90vh; */
 	margin: auto;
 }
 
@@ -72,4 +70,4 @@
 	display: flex;
 	column-gap: 25px;
 	margin-top: 25px;
-}
+} */

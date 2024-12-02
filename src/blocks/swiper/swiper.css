@@ -1,0 +1,25 @@
+.swiper_our {
+    /* width: 1000px;
+    height: 600px; */
+    width: 80vw;
+    height: 60vh;
+    --swiper-theme-color: white;
+}
+
+.swiper-slide_our {
+    border-radius: 25px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.swiper-slide__img {
+    border-radius: 25px;
+    margin: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.swiper-wrapper_our {
+    /* width: 80%; */
+    /* height: 50%; */
+}

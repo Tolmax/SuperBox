@@ -41,11 +41,11 @@ export function getTypeOfGoods() {
     const typeNew = createTypesOfGoods(number, _id, box, title, link, description);
     elementPlace.append(typeNew);
   });
-scrollSlider1.addEventListener('click', getgoodsScroll1);
-scrollSlider2.addEventListener('click', getgoodsScroll2);
-scrollSlider3.addEventListener('click', getgoodsScroll3);
-scrollSlider4.addEventListener('click', getgoodsScroll4);
-scrollSlider5.addEventListener('click', getgoodsScroll5);
+// scrollSlider1.addEventListener('click', getgoodsScroll1);
+// scrollSlider2.addEventListener('click', getgoodsScroll2);
+// scrollSlider3.addEventListener('click', getgoodsScroll3);
+// scrollSlider4.addEventListener('click', getgoodsScroll4);
+// scrollSlider5.addEventListener('click', getgoodsScroll5);
 }
 
 function getgoodsCard(evt) {
