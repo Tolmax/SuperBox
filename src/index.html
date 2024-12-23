@@ -1,137 +1,176 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Сайт производителя индивидуальной мебели"
+    />
+    <meta name="keywords" content="html, css" />
+    <meta name="author" content="Анатолий" />
+    <title>ЯЩИКИ & ЯЩИЧКИ</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name='description' content='Сайт производителя индивидуальной мебели'>
-	<meta name='keywords' content='html, css'>
-	<meta name="author" content="Анатолий">
-	<title>ЯЩИКИ & ЯЩИЧКИ</title>
-</head>
+  <body class="body">
+    <header class="header">
+      <!-- <img src="<%=require('./images/logo-nuts.jpg')%>" alt="логотип" class="header__logo"> -->
+      <!-- <button type="button" class="header__button">ЗАКАЗАТЬ ПО ВАШИМ РАЗМЕРАМ ЛЮБОЙ ТОВАР</button> -->
+      <!-- <div class="header__messegers"> -->
+      <a
+        class="header__telegramm"
+        href="https://t.me/Mirimar70?text=Привет, я зашел на твой сайт и у меня есть вопрос:"
+        target="_blank"
+        aria-label="Написать в Telegram"
+      ></a>
+      <a
+        class="header__whatsapp"
+        href="https://wa.me/+79033433113?text=Привет, я зашел на твой сайт и у меня есть вопрос:"
+        target="_blank"
+        aria-label="Написать в WhatsApp"
+      ></a>
+      <!-- </div> -->
+    </header>
 
-<body class="body">
+    <main class="page">
+      <section class="message">
+        <h1 class="message__title">ЯЩИЧКИ & ЯЩИКИ</h1>
+        <p class="message__subtitle">
+          Производство деревянных ящиков для хранения вещей и продуктов по Вашим
+          индивидуальным размерам
+        </p>
+      </section>
 
-	<header class="header">
-		<!-- <img src="<%=require('./images/logo-nuts.jpg')%>" alt="логотип" class="header__logo"> -->
-		<!-- <button type="button" class="header__button">ЗАКАЗАТЬ ПО ВАШИМ РАЗМЕРАМ ЛЮБОЙ ТОВАР</button> -->
-		<!-- <div class="header__messegers"> -->
-		<a class="header__telegramm" href="https://t.me/Mirimar70" target="_blank" aria-label="Написать в Telegram"></a>
-		<a class="header__whatsapp"
-			href="https://wa.me/+79033433113?text=Здравствуйте,%20интересует%20ваше%20объявление%20о%20продаже%20машины"
-			target="_blank" aria-label="Написать в WhatsApp"></a>
-		<!-- </div> -->
-	</header>
+      <section class="slider-swiper">
+        <!-- Slider main container -->
+        <div class="swiper swiper_our">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <a class="swiper-slide" href="#one"
+              ><img
+                class="swiper-slide__img"
+                src="<%=require('./images/boxes/boxes.jpg')%>"
+                alt="Ящики"
+            /></a>
+            <a class="swiper-slide" href="#two"
+              ><img
+                class="swiper-slide__img"
+                src="<%=require('./images/tumbs/tumbs.jpg')%>"
+                alt="Подставки"
+            /></a>
+            <a class="swiper-slide" href="#three"
+              ><img
+                class="swiper-slide__img"
+                src="<%=require('./images/lockers/lockers.jpg')%>"
+                alt="Шкафы"
+            /></a>
+            <a class="swiper-slide" href="#four"
+              ><img
+                class="swiper-slide__img"
+                src="<%=require('./images/shelves/shelves.jpg')%>"
+                alt="Тумбы"
+            /></a>
+            <a class="swiper-slide" href="#five"
+              ><img
+                class="swiper-slide__img"
+                src="<%=require('./images/souvenirs/racks.jpg')%>"
+                alt="Стеллажи"
+            /></a>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-	<main class="page">
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper__arrow"></div>
+          <div class="swiper-button-next swiper__arrow"></div>
 
-		<section class="message">
-			<h1 class="message__title">ЯЩИЧКИ & ЯЩИКИ</h1>
-			<p class="message__subtitle">Производство деревянных ящиков для хранения вещей и продуктов по Вашим
-				индивидуальным
-				размерам</p>
-		</section>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
 
+      <section class="goods__types" aria-label="Виды продукции"></section>
+    </main>
 
+    <footer class="footer">
+      <nav>
+        <ul class="footer__links">
+          <li>
+            Позвонить по телефону
+            <a href="tel:+79033433113" class="footer__link">+7(903)343-31-13</a>
+          </li>
+          <li>
+            Отправить
+            <a
+              href="mailto:kra1970@mail.ru?Subject=Вопрос с сайта&body=Привет, я зашел на твой сайт и у меня есть вопрос:"
+              class="footer__link"
+              >Email</a
+            >
+          </li>
+          <li>
+            Позвонить по
+            <a href="skype:tolmax2000?chat" class="footer__link">Skype</a>
+          </li>
+        </ul>
+      </nav>
 
-		<section class="slider-swiper">
-			<!-- Slider main container -->
-			<div class="swiper swiper_our">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<a class="swiper-slide" href="#one"><img class="swiper-slide__img"
-							src="<%=require('./images/boxes/boxes.jpg')%>" alt="Ящики"></a>
-					<a class="swiper-slide" href="#two"><img class="swiper-slide__img"
-							src="<%=require('./images/tumbs/tumbs.jpg')%>" alt="Подставки"></a>
-					<a class="swiper-slide" href="#three"><img class="swiper-slide__img"
-							src="<%=require('./images/lockers/lockers.jpg')%>" alt="Шкафы"></a>
-					<a class="swiper-slide" href="#four"><img class="swiper-slide__img"
-							src="<%=require('./images/shelves/shelves.jpg')%>" alt="Тумбы"></a>
-					<a class="swiper-slide" href="#five"><img class="swiper-slide__img"
-							src="<%=require('./images/souvenirs/racks.jpg')%>" alt="Стеллажи"></a>
-				</div>
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
+      <p class="footer__copyright">AM studio</p>
+    </footer>
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__close" aria-label="закрыть"></button>
+        <div class="popup__content">
+          <div class="popup__image-container">
+            <h3 class="popup__title">ЯЩИК ДЛЯ СУВЕНИРОВ</h3>
+            <h4 class="popup__subtitle">
+              "ЗАПАСЫ ВПРОК" с двумя вырезами для ручек
+            </h4>
+            <span class="popup__addinfo"
+              >Предназначен для хранения мелких предметов</span
+            >
+            <img class="popup__image" src="" alt="" />
+          </div>
+          <div class="popup__mini-container">
+            <h5 class="popup__details-title">Основные характеристики</h5>
+            <ul class="popup__details-list">
+              <li class="popup__detail-size popup__details">Габариты</li>
+              <li class="popup__detail-comfort popup__details">Удобства</li>
+              <li class="popup__detail-material popup__details">Материал</li>
+              <li class="popup__detail-color popup__details">Цвет</li>
+              <li class="popup__detail-weight popup__details">Вес товара</li>
+              <li class="popup__detail-fix popup__details">Сборка</li>
+              <li class="popup__detail-usage popup__details">Готовность</li>
+            </ul>
+            <button class="popup__button">
+              <a href="" target="_blank" class="popup__url">КУПИТЬ</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev  swiper__arrow"></div>
-				<div class="swiper-button-next swiper__arrow"></div>
+    <template id="card-template">
+      <div class="elements__card">
+        <h2 class="elements__name"></h2>
+        <img class="elements__image" src="" alt="" />
+        <!-- <button type="button" class="elements__heart"></button> -->
+        <!-- <button type="button" class="elements__button">ВЫБРАТЬ</button> -->
+      </div>
+    </template>
 
-				<!-- If we need scrollbar -->
-				<div class="swiper-scrollbar"></div>
-			</div>
-		</section>
-
-		<section class="goods__types" aria-label="Виды продукции"></section>
-
-	</main>
-
-	<footer class="footer">
-		<nav>
-			<ul class="footer__links">
-				<li><a href="https://travel.yandex.ru" class="footer__link" target="_blank">телефон:
-						+7-903-343-31-13</a>
-				</li>
-				<li><a href="https://travel.yandex.ru" class="footer__link" target="_blank">e-mail: kra1970@mail.ru</a>
-				</li>
-			</ul>
-		</nav>
-
-		<p class="footer__copyright">AM studio</p>
-
-	</footer>
-	<div class="popup">
-		<div class="popup__container">
-			<button class="popup__close" aria-label="закрыть"></button>
-			<div class="popup__content">
-				<div class="popup__image-container">
-					<h3 class="popup__title">ЯЩИК ДЛЯ СУВЕНИРОВ</h3>
-					<h4 class="popup__subtitle">"ЗАПАСЫ ВПРОК" с двумя вырезами для ручек</h4>
-					<span class="popup__addinfo">Предназначен для хранения мелких предметов</span>
-					<img class="popup__image" src="" alt="" />
-				</div>
-				<div class="popup__mini-container">
-					<h5 class="popup__details-title">Основные характеристики</h5>
-					<ul class="popup__details-list">
-						<li class="popup__detail-size popup__details">Габариты</li>
-						<li class="popup__detail-comfort popup__details">Удобства</li>
-						<li class="popup__detail-material popup__details">Материал</li>
-						<li class="popup__detail-color popup__details">Цвет</li>
-						<li class="popup__detail-weight popup__details">Вес товара</li>
-						<li class="popup__detail-fix popup__details">Сборка</li>
-						<li class="popup__detail-usage popup__details">Готовность</li>
-					</ul>
-					<button class="popup__button"><a href="" target="_blank" class="popup__url">КУПИТЬ</a></button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<template id="card-template">
-		<div class="elements__card">
-			<h2 class="elements__name"></h2>
-			<img class="elements__image" src="" alt="" />
-			<!-- <button type="button" class="elements__heart"></button> -->
-			<!-- <button type="button" class="elements__button">ВЫБРАТЬ</button> -->
-		</div>
-	</template>
-
-	<template id="goods-template">
-		<article class="goods__container">
-			<h2 id="" class="goods__title"></h2>
-			<div id="" class="goods__box">
-				<img id="" src="" alt="" class="goods__image">
-				<p class="goods__paragraph"></p>
-			</div>
-			<div id="" class="goods__render"></div>
-		</article>
-	</template>
-
-</body>
-
+    <template id="goods-template">
+      <article class="goods__container">
+        <h2 id="" class="goods__title"></h2>
+        <div id="" class="goods__box">
+          <img id="" src="" alt="" class="goods__image" />
+          <p class="goods__paragraph"></p>
+        </div>
+        <div id="" class="goods__render"></div>
+      </article>
+    </template>
+  </body>
 </html>
-
 
 <!-- <div class="popup">
     <div class="popup__content">

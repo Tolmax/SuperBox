@@ -33,58 +33,164 @@ export function getTypeOfGoods() {
   });
 }
 
+// function getgoodsCard(evt) {
+//     let cardsArray;
+//     let elementsBox;
+
+//     if (evt.target === document.getElementById('souvenirbox')) {
+//         cardsArray = cardsMini;
+//         elementsBox = document.getElementById('souvenir-box');
+//     } else if (evt.target === document.getElementById('boxes')) {
+//         cardsArray = boxesImages2;
+//         elementsBox = document.getElementById('boxes-box');
+//     } else if (evt.target === document.getElementById('shelves')) {
+//         cardsArray = boxesImages;
+//         elementsBox = document.getElementById('shelves-box');
+//     } else if (evt.target === document.getElementById('lockers')) {
+//         cardsArray = boxesImages2;
+//         elementsBox = document.getElementById('lockers-box');
+//     } else if (evt.target === document.getElementById('tumbs')) {
+// 			cardsArray = boxesImages2;
+// 			elementsBox = document.getElementById('tumbs-box');
+// 	} 
+//     // cardsArray.forEach(function ({ link, name }) {
+//     //     const cardNew = createCard(link, name);
+//     //     elementsBox.append(cardNew);
+//     //   });
+//     cardsArray.forEach(function (data) {
+//       const cardNew = createCard(data);
+//       elementsBox.append(cardNew);
+//     });
+
+//     document.addEventListener("keydown", (evt) => {
+//       if (evt.key === "Escape") {
+//         console.log("Escape"); 
+//         elementsBox.innerHTML = "";
+//         cardsArray = undefined;
+//       }
+//     });
+
+//     window.addEventListener("click", function (e) {
+//       if (e.target === elementsBox) {
+//         console.log("click");
+//         elementsBox.innerHTML = "";
+//         cardsArray = undefined;
+//       }
+//     });
+//   }
+
+
+// function getgoodsCard(evt) {
+//   let cardsArray;
+//   let elementsBox;
+
+
+//   if (evt.target !== document.getElementById('souvenirbox') && evt.target !== document.getElementById('boxes')
+//   && evt.target !== document.getElementById('shelves') && evt.target !== document.getElementById('lockers')
+//   && evt.target !== document.getElementById('tumbs')) {
+//     return;
+//   }
+
+//   if (evt.target === document.getElementById('souvenirbox')) {
+//       cardsArray = cardsMini;
+//       elementsBox = document.getElementById('souvenir-box');
+//   } else if (evt.target === document.getElementById('boxes')) {
+//       cardsArray = boxesImages2;
+//       elementsBox = document.getElementById('boxes-box');
+//   } else if (evt.target === document.getElementById('shelves')) {
+//       cardsArray = boxesImages;
+//       elementsBox = document.getElementById('shelves-box');
+//   } else if (evt.target === document.getElementById('lockers')) {
+//       cardsArray = boxesImages2;
+//       elementsBox = document.getElementById('lockers-box');
+//   } else if (evt.target === document.getElementById('tumbs')) {
+//       cardsArray = boxesImages2;
+//       elementsBox = document.getElementById('tumbs-box');
+//   } 
+
+//   // Добавляем карточки в элементы
+//   cardsArray.forEach(function (data) {
+//       const cardNew = createCard(data);
+//       elementsBox.append(cardNew);
+//   });
+
+//   // Обработчик для закрытия по клавише Escape
+//   document.addEventListener("keydown", (evt) => {
+//       if (evt.key === "Escape") {
+//           console.log("Escape");
+//           elementsBox.innerHTML = "";
+//           cardsArray = undefined;
+//       }
+//   });
+
+//   // Обработчик для клика по элементам
+//   document.addEventListener("click", function (e) {
+
+//        if (e.target !== elementsBox) {
+//           console.log("click");
+//           elementsBox.innerHTML = "";
+//           cardsArray = undefined;
+//           // this.location.reload();
+//       }
+//   });
+
+// }
+
 function getgoodsCard(evt) {
-    let cardsArray;
-    let elementsBox;
+  let cardsArray;
+  let elementsBox;
+  let cardsAdded = false;  // Флаг для отслеживания состояния добавления карточек
 
-    if (evt.target === document.getElementById('souvenirbox')) {
-        cardsArray = cardsMini;
-        elementsBox = document.getElementById('souvenir-box');
-    } else if (evt.target === document.getElementById('boxes')) {
-        cardsArray = boxesImages2;
-        elementsBox = document.getElementById('boxes-box');
-    } else if (evt.target === document.getElementById('shelves')) {
-        cardsArray = boxesImages;
-        elementsBox = document.getElementById('shelves-box');
-    } else if (evt.target === document.getElementById('lockers')) {
-        cardsArray = boxesImages2;
-        elementsBox = document.getElementById('lockers-box');
-    } else if (evt.target === document.getElementById('tumbs')) {
-			cardsArray = boxesImages2;
-			elementsBox = document.getElementById('tumbs-box');
-	} 
-    // cardsArray.forEach(function ({ link, name }) {
-    //     const cardNew = createCard(link, name);
-    //     elementsBox.append(cardNew);
-    //   });
-    cardsArray.forEach(function (data) {
-      const cardNew = createCard(data);
-      elementsBox.append(cardNew);
-    });
-
-    document.addEventListener("keydown", (evt) => {
-      if (evt.key === "Escape") {
-        elementsBox.innerHTML = "";
-        cardsArray = undefined;
-      }
-    });
-
-    window.addEventListener("click", function (e) {
-      if (!e.target === elementsBox) {
-        console.log("HAY");
-        
-    //     elementsBox.innerHTML = "";
-    //     cardsArray = undefined;
-      }
-    });
-    // const infoMiniCard = elementsBox.querySelector('.elements__image')
-    // infoMiniCard.addEventListener('click', () => {
-    //   generatePopupCard();
-    // })
-    // }
-    // newButton.addEventListener('click', (evt) => {
-    //     if (evt) {
-    //         location.reload();
-    //     }
-    // });
+  if (evt.target !== document.getElementById('souvenirbox') && evt.target !== document.getElementById('boxes')
+  && evt.target !== document.getElementById('shelves') && evt.target !== document.getElementById('lockers')
+  && evt.target !== document.getElementById('tumbs')) {
+    return;
   }
+
+  // Определяем массив карточек и контейнер в зависимости от нажатого элемента
+  if (evt.target === document.getElementById('souvenirbox')) {
+      cardsArray = cardsMini;
+      elementsBox = document.getElementById('souvenir-box');
+  } else if (evt.target === document.getElementById('boxes')) {
+      cardsArray = boxesImages2;
+      elementsBox = document.getElementById('boxes-box');
+  } else if (evt.target === document.getElementById('shelves')) {
+      cardsArray = boxesImages;
+      elementsBox = document.getElementById('shelves-box');
+  } else if (evt.target === document.getElementById('lockers')) {
+      cardsArray = boxesImages2;
+      elementsBox = document.getElementById('lockers-box');
+  } else if (evt.target === document.getElementById('tumbs')) {
+      cardsArray = boxesImages2;
+      elementsBox = document.getElementById('tumbs-box');
+  } 
+
+  // Если карточки еще не были добавлены, добавляем их
+  if (!cardsAdded) {
+    cardsArray.forEach(function (data) {
+        const cardNew = createCard(data);
+        elementsBox.append(cardNew);
+    });
+    cardsAdded = true;  // Устанавливаем флаг, что карточки добавлены
+  }
+
+  // Обработчик для закрытия по клавише Escape
+  document.addEventListener("keydown", (evt) => {
+      if (evt.key === "Escape") {
+          console.log("Escape");
+          elementsBox.innerHTML = "";  // Очищаем контейнер
+          cardsAdded = false;  // Сбрасываем флаг
+      }
+  });
+
+  // Обработчик для клика по элементам
+  // document.addEventListener("click", function (e) {
+  //     if (e.target !== elementsBox) { 
+  //         console.log("click");
+  //         if (cardsAdded) {  // Если карточки добавлены, удаляем их
+  //             elementsBox.innerHTML = "";
+  //             cardsAdded = false;  // Сбрасываем флаг
+  //         }
+  //     }
+  // });
+}
